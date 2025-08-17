@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FacebookMessengerIcon, InstagramIcon } from './icons';
 
@@ -7,23 +8,16 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ showHome }) => {
   return (
-    <header className="py-6 text-center border-b-2 border-[#F3E9D2] border-opacity-30 bg-[#0891B2] sticky top-0 z-10">
-      <div className="container mx-auto flex justify-between items-center px-4 relative">
-         <button 
-            onClick={showHome} 
-            aria-label="Back to Home"
-            className="font-sans text-sm uppercase tracking-widest text-[#F3E9D2] opacity-80 hover:opacity-100 transition-opacity">
-            &larr; Home
-         </button>
+    <header className="py-4 text-center border-b-2 border-[#F3E9D2] border-opacity-30 bg-[#0891B2] sticky top-0 z-10">
+      <div className="container mx-auto flex justify-between items-center px-4">
          <button 
             onClick={showHome} 
             aria-label="Posh Lounge Home"
-            className="absolute left-1/2 -translate-x-1/2"
           >
            <img 
               src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1755443891/sds_qx7msz.png" 
               alt="Posh Lounge Rooftop Logo" 
-              className="h-16"
+              className="h-16 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]"
             />
          </button>
          <div className="flex items-center gap-2">

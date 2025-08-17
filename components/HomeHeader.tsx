@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { FacebookMessengerIcon, InstagramIcon } from './icons';
 
@@ -23,11 +24,11 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ showMenu, showBlog, showHome })
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#1a1a1a] shadow-lg py-3' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto flex justify-between items-center px-4">
-        <button onClick={showHome} aria-label="Go to top of page">
+        <button onClick={showHome} aria-label="Go to top of page" className="flex-shrink-0">
             <img 
               src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1755443891/sds_qx7msz.png" 
               alt="Posh Lounge Rooftop Logo" 
-              className="h-14 transition-all duration-300"
+              className="h-16 sm:h-20 transition-all duration-300 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]"
             />
         </button>
         <nav className="flex items-center gap-2 md:gap-4">

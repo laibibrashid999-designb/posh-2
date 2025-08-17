@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { BlogPost } from '../types';
 import Header from './Header';
@@ -16,7 +17,7 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showHome, showBlogPost }) =>
       <Header showHome={showHome} />
       <main className="container mx-auto px-4 py-12" role="main">
         <header className="text-center mb-16">
-          <h1 className="font-display text-7xl md:text-8xl text-white">From The Journal</h1>
+          <h1 className="font-display text-6xl md:text-8xl text-white">From The Journal</h1>
           <p className="text-lg text-white/80 mt-2">Stories, culinary insights, and news from the Posh Lounge Rooftop.</p>
         </header>
 

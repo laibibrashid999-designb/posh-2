@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -7,7 +8,7 @@ const Footer: React.FC = () => {
         <img 
           src="https://res.cloudinary.com/dy80ftu9k/image/upload/v1755443891/sds_qx7msz.png" 
           alt="Posh Lounge Rooftop Logo" 
-          className="h-20 mx-auto mb-6" 
+          className="h-24 mx-auto mb-6 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]" 
         />
         
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left font-sans text-opacity-90">

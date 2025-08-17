@@ -62,6 +62,16 @@
       .animate-marquee2 {
         animation: marquee2 40s linear infinite;
       }
+      @keyframes marquee-bestsellers {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-marquee-bestsellers {
+        animation: marquee-bestsellers 60s linear infinite;
+      }
+      .animate-marquee-bestsellers:hover {
+        animation-play-state: paused;
+      }
       /* Loader styles */
       #loader {
         display: flex;

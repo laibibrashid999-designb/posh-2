@@ -10,7 +10,7 @@ interface CategorySectionProps {
 const CategorySection: React.FC<CategorySectionProps> = ({ category }) => {
   return (
     <section className="mb-12 scroll-mt-28" aria-labelledby={`${category.category}-heading`}>
-      <h2 id={`${category.category}-heading`} className="font-display text-5xl text-[#F3E9D2] mb-6 border-b-2 border-[#F3E9D2] border-opacity-30 pb-3">{category.category}</h2>
+      <h2 id={`${category.category}-heading`} className="font-display text-4xl sm:text-5xl text-[#F3E9D2] mb-6 border-b-2 border-[#F3E9D2] border-opacity-30 pb-3">{category.category}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {category.items.map((item, index) => (
           <MenuItemCard key={`${category.category}-${item.name}-${index}`} item={item} />

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import HomeHeader from './components/HomeHeader';
@@ -58,8 +59,8 @@ const MarqueeContent = ({ className }: { className: string }) => {
         <>
             {items.map((_, i) => (
                  <div key={i} className={`flex items-center space-x-6 mx-6 flex-shrink-0 ${className}`}>
-                    <span className="font-display text-4xl italic">{words[i % words.length]}</span>
-                    <div className="w-20 h-20 bg-[#E2B740] rounded-full flex items-center justify-center">
+                    <span className="font-display text-3xl italic">{words[i % words.length]}</span>
+                    <div className="w-16 h-16 bg-[#E2B740] rounded-full flex items-center justify-center">
                         <span className="text-xl font-bold text-black">100%</span>
                     </div>
                     <ArrowUpRightIcon className="w-8 h-8" />
@@ -102,15 +103,14 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
       <HomeHeader showMenu={showMenu} showBlog={showBlog} showHome={showHome} />
       <main>
         <section 
-            className="h-screen bg-cover bg-center flex flex-col justify-end items-start text-left text-[#F3E9D2] p-8 md:p-16" 
+            className="h-screen bg-cover bg-center flex flex-col justify-end items-start text-left text-[#F3E9D2] p-6 sm:p-8 md:p-16" 
             style={{backgroundImage: "linear-gradient(to top, rgba(0,0,0,0.85) 10%, rgba(0,0,0,0.4) 40%, transparent 70%), url('https://res.cloudinary.com/dy80ftu9k/image/upload/v1755443220/Heo_Secion_image_pzcktp.png')"}}>
             <div className="max-w-5xl">
-                <p className="font-sans text-base md:text-lg tracking-[0.3em] text-white/80 uppercase">Posh Lounge Rooftop</p>
-                <h1 className="font-display text-7xl md:text-[120px] lg:text-[140px] leading-none tracking-tight text-white mt-4">
+                <h1 className="font-display text-6xl sm:text-7xl md:text-[120px] lg:text-[140px] leading-none tracking-tight text-white mt-4">
                     WHERE THE SKY<br/>
                     MEETS THE SOUL
                 </h1>
-                <p className="font-sans text-lg md:text-xl mt-6 text-white/90 max-w-2xl">
+                <p className="font-sans text-base sm:text-lg md:text-xl mt-6 text-white/90 max-w-2xl">
                     Dhaka's premier rooftop destination for elevated dining and panoramic city views.
                 </p>
                 <button
@@ -126,11 +126,11 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
         
         <Marquee />
 
-        <section className="py-32 bg-cover bg-center flex items-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1502602898657-3e91760c0337?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')"}}>
+        <section className="py-20 bg-cover bg-center flex items-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1502602898657-3e91760c0337?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')"}}>
           <div className="container mx-auto px-4 text-[#F3E9D2]">
              <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="text-center md:text-left">
-                   <h2 className="font-display text-6xl md:text-7xl">CRAFTED FOR REAL FLAVOR</h2>
+                   <h2 className="font-display text-5xl md:text-7xl">CRAFTED FOR REAL FLAVOR</h2>
                    <p className="font-sans mt-4 text-sm uppercase tracking-widest opacity-80">From kitchen to table, each step is done with love, tradition, and true flavor.</p>
                 </div>
                 <div className="space-y-4 text-center md:text-right">
@@ -143,7 +143,7 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
 
         <section className="py-20 px-4 bg-[#0891B2] text-center overflow-hidden">
           <div className="container mx-auto">
-            <h2 className="font-display text-6xl text-[#F3E9D2] mb-4">OUR BESTSELLERS</h2>
+            <h2 className="font-display text-5xl text-[#F3E9D2] mb-4">OUR BESTSELLERS</h2>
             <p className="mt-4 text-lg max-w-2xl mx-auto text-[#F3E9D2]/80 mb-12">Handpicked favorites loved by our guests.</p>
             <BestsellerCarousel bestsellers={bestsellers} />
             <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -180,7 +180,7 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
         
         <section className="bg-[#1a1a1a] text-[#F3E9D2] py-20 px-4 font-sans">
             <div className="container mx-auto text-center">
-                <h2 className="font-display text-6xl md:text-7xl">CONTACT & LOCATION</h2>
+                <h2 className="font-display text-5xl md:text-7xl">CONTACT & LOCATION</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto text-opacity-80">We look forward to welcoming you. For reservations, please call us. Walk-ins are always welcome.</p>
                 <div className="grid md:grid-cols-3 gap-12 text-left mt-16 max-w-6xl mx-auto">
                     <div>
@@ -218,7 +218,7 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
         
         <section className="bg-[#0891B2] text-[#F3E9D2] py-20 px-4 text-center">
           <div className="container mx-auto">
-            <h2 className="font-display text-6xl">FROM OUR JOURNAL</h2>
+            <h2 className="font-display text-5xl">FROM OUR JOURNAL</h2>
             <p className="mt-4 text-lg max-w-2xl mx-auto text-opacity-80">Stories from the rooftop, culinary insights, and more.</p>
             <button
                 onClick={showBlog}
@@ -233,7 +233,7 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
 
         <section className="h-[40vh] bg-cover bg-center flex flex-col justify-end items-start text-[#F3E9D2] p-8 md:p-12 relative" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://res.cloudinary.com/dukaroz3u/image/upload/v1755442997/panr3hkcccjv6ljojlmb.jpg')"}}>
              <div className="container mx-auto">
-                <h2 className="font-display text-7xl md:text-8xl">THANK YOU!</h2>
+                <h2 className="font-display text-6xl md:text-8xl">THANK YOU!</h2>
              </div>
              <div className="absolute bottom-4 right-4 text-xs tracking-widest">
                 <p>© {new Date().getFullYear()} made by Contentguy. All rights reserved.</p>

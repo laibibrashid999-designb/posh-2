@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { BlogPost } from '../types';
 import Header from './Header';
@@ -19,7 +20,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, showHome, showBlog }) => {
             <button onClick={showBlog} className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 transition-opacity mb-4">
               &larr; Back to Journal
             </button>
-            <h1 className="font-display text-5xl md:text-7xl">{post.title}</h1>
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl">{post.title}</h1>
             <p className="mt-2 text-white/80">{post.date} &bull; By {post.author}</p>
           </div>
         </div>
