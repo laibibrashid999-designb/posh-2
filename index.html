@@ -62,15 +62,13 @@
       .animate-marquee2 {
         animation: marquee2 40s linear infinite;
       }
-      @keyframes marquee-bestsellers {
-        from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
+      /* Custom utility to hide scrollbars */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
       }
-      .animate-marquee-bestsellers {
-        animation: marquee-bestsellers 60s linear infinite;
-      }
-      .animate-marquee-bestsellers:hover {
-        animation-play-state: paused;
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
       }
       /* Loader styles */
       #loader {

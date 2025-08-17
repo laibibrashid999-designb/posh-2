@@ -198,7 +198,7 @@ const Home: React.FC<{ showMenu: () => void; showBlog: () => void; showHome: () 
                 </div>
                 <div className="mt-16">
                      <h3 className="font-display text-2xl tracking-widest">REVIEW US ON GOOGLE</h3>
-                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.google.com/search?q=pomo+rosso+dhaka" alt="QR Code for Google Review" className="mt-4 mx-auto bg-white p-2 rounded-md"/>
+                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.google.com/search?q=Posh+Lounge+Rooftop+Dhaka" alt="QR Code for Google Review" className="mt-4 mx-auto bg-white p-2 rounded-md"/>
                 </div>
                 <div className="mt-16 pt-8 border-t border-[#F3E9D2] border-opacity-30">
                     <div className="flex justify-center items-center space-x-8">
