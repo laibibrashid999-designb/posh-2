@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posh Lounge Rooftop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dy80ftu9k/image/upload/v1755443220/Heo_Secion_image_pzcktp.png">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dy80ftu9k/image/upload/v1755443891/sds_qx7msz.png">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755443000/x8urstieksbrrh9crhwf.jpg">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755442999/mxzrpq4fs7wple8hfvcl.jpg">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755442995/zlcmvesoyfjo6tquxsrr.jpg">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755443002/jepp1moabzttsem0snnt.jpg">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755443003/uap7e4aju0uexk7utp4u.jpg">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1502602898657-3e91760c0337?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755442997/panr3hkcccjv6ljojlmb.jpg">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dukaroz3u/image/upload/v1755442998/aymqwt3klhrvaqygjcqp.jpg">
+
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F3E9D2;
+      }
+      .font-display {
+        font-family: 'Staatliches', cursive;
+      }
+      .font-sans {
+        font-family: 'Montserrat', sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F3E9D2;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0891B2;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0E7490;
+      }
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+      }
+      .animate-marquee {
+        animation: marquee 40s linear infinite;
+      }
+      @keyframes marquee2 {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+      }
+      .animate-marquee2 {
+        animation: marquee2 40s linear infinite;
+      }
+      /* Loader styles */
+      #loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #F3E9D2;
+      }
+      .spinner {
+        border: 8px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #0891B2;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root">
+      <div id="loader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
