@@ -13,13 +13,13 @@ interface BestsellerCarouselProps {
 }
 
 const BestsellerCard: React.FC<{ item: Bestseller }> = ({ item }) => (
-    <div className="flex-shrink-0 w-[300px] md:w-[350px] mx-4 bg-[#0E7490] rounded-3xl shadow-2xl overflow-hidden group select-none">
+    <div className="flex-shrink-0 w-[300px] md:w-[350px] mx-4 bg-[#0D323F] rounded-3xl shadow-2xl overflow-hidden group select-none">
         <img src={item.imageUrl} alt={item.name} className="w-full h-56 object-cover pointer-events-none" />
-        <div className="p-6 text-left text-[#F3E9D2]">
-            <h3 className="font-display text-3xl h-16">{item.name}</h3>
-            <p className="mt-2 text-sm opacity-90 font-light h-20">{item.description}</p>
+        <div className="p-6 text-left text-[#F7E6C9]">
+            <h3 className="font-display text-3xl">{item.name}</h3>
+            <p className="mt-2 text-sm opacity-90 font-light">{item.description}</p>
             <div className="mt-4 flex justify-between items-center">
-                <span className="text-xl font-bold font-sans text-[#F3E9D2]">{item.price}</span>
+                <span className="text-xl font-bold font-sans text-[#F7E6C9]">{item.price}</span>
             </div>
         </div>
     </div>

@@ -12,12 +12,12 @@ interface BlogPostProps {
 
 const BlogPost: React.FC<BlogPostProps> = ({ post, showHome, showBlog }) => {
   return (
-    <div className="bg-[#F3E9D2] text-[#1a1a1a] min-h-screen font-sans">
+    <div className="bg-[#0D323F] text-[#F7E6C9] min-h-screen font-sans">
       <Header showHome={showHome} />
       <main role="main">
-        <div className="relative h-[50vh] bg-cover bg-center flex items-end text-white" style={{ backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8) 20%, transparent), url('${post.imageUrl}')` }}>
+        <div className="relative h-[50vh] bg-cover bg-center flex items-end text-white" style={{ backgroundImage: `linear-gradient(to top, rgba(13,50,63,0.8) 20%, transparent), url('${post.imageUrl}')` }}>
           <div className="container mx-auto px-4 pb-12">
-            <button onClick={showBlog} className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 transition-opacity mb-4">
+            <button onClick={showBlog} className="text-sm uppercase tracking-widest opacity-80 hover:opacity-100 transition-opacity mb-4 text-[#F7E6C9]">
               &larr; Back to Journal
             </button>
             <h1 className="font-display text-4xl sm:text-5xl md:text-7xl">{post.title}</h1>
@@ -26,10 +26,10 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, showHome, showBlog }) => {
         </div>
 
         <article className="container mx-auto px-4 py-16 max-w-3xl">
-          <div className="prose lg:prose-xl max-w-none text-[#1a1a1a]/90 space-y-6">
+          <div className="prose lg:prose-xl max-w-none text-[#F7E6C9]/90 space-y-6">
             {post.content.map((block, index) => {
               if (block.type === 'heading') {
-                return <h2 key={index} className="font-display text-3xl md:text-4xl !mt-12 !mb-4 text-black">{block.text}</h2>;
+                return <h2 key={index} className="font-display text-3xl md:text-4xl !mt-12 !mb-4 text-white">{block.text}</h2>;
               }
               return <p key={index} className="text-lg leading-relaxed">{block.text}</p>;
             })}

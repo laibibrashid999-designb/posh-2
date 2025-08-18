@@ -3,6 +3,7 @@ export interface MenuItem {
   price: string;
   description?: string;
   quantity?: string;
+  imageUrl?: string;
 }
 
 export interface MenuCategory {

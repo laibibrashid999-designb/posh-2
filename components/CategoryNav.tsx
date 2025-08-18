@@ -31,7 +31,7 @@ const CategoryNav: React.FC<CategoryNavProps> = ({ categories, activeCategory })
 
   return (
     <aside className="lg:w-64 lg:sticky top-28 self-start">
-      <h2 className="font-display text-3xl mb-4 text-[#F3E9D2] hidden lg:block">Categories</h2>
+      <h2 className="font-display text-3xl mb-4 text-[#F7E6C9] hidden lg:block">Categories</h2>
       <nav role="navigation" aria-label="Menu Categories">
         {/* Mobile Nav */}
         <div className="lg:hidden pb-3 mb-4">
@@ -43,8 +43,8 @@ const CategoryNav: React.FC<CategoryNavProps> = ({ categories, activeCategory })
                     onClick={(e) => handleNavClick(e, category)}
                     className={`block text-center px-2 py-2 text-sm font-semibold rounded-sm transition-colors duration-300 ${
                     activeCategory === category
-                        ? 'bg-[#F3E9D2] text-[#0891B2]'
-                        : 'bg-[#0E7490] text-[#F3E9D2] hover:bg-[#F3E9D2] hover:text-[#0891B2]'
+                        ? 'bg-[#F7E6C9] text-[#0D323F]'
+                        : 'bg-[#14424C] text-[#F7E6C9] hover:bg-[#F7E6C9] hover:text-[#0D323F]'
                     }`}
                 >
                     {category}
@@ -61,8 +61,8 @@ const CategoryNav: React.FC<CategoryNavProps> = ({ categories, activeCategory })
                     onClick={(e) => handleNavClick(e, category)}
                     className={`block px-4 py-2 rounded-sm transition-colors duration-300 font-semibold text-left ${
                     activeCategory === category
-                        ? 'bg-[#F3E9D2] text-[#0891B2]'
-                        : 'text-[#F3E9D2] hover:bg-[#f3e9d2] hover:text-[#0891B2]'
+                        ? 'bg-[#F7E6C9] text-[#0D323F]'
+                        : 'text-[#F7E6C9] hover:bg-[#F7E6C9] hover:text-[#0D323F]'
                     }`}
                 >
                     {category}
