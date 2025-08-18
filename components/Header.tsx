@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ showHome }) => {
            <img 
               src="https://res.cloudinary.com/dy80ftu9k/image/upload/f_auto,q_auto/v1755516557/POSH-LOUNGE-Logo_ibdfyp.png" 
               alt="Posh Lounge Rooftop Logo" 
-              className="h-20 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]"
+              className="h-24 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]"
             />
          </button>
          <div className="flex items-center gap-2">

@@ -28,7 +28,7 @@ const HomeHeader: React.FC<HomeHeaderProps> = ({ showMenu, showBlog, showHome })
             <img 
               src="https://res.cloudinary.com/dy80ftu9k/image/upload/f_auto,q_auto/v1755516557/POSH-LOUNGE-Logo_ibdfyp.png" 
               alt="Posh Lounge Rooftop Logo" 
-              className="h-16 sm:h-20 transition-all duration-300 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]"
+              className="h-20 sm:h-24 transition-all duration-300 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]"
             />
         </button>
         <nav className="flex items-center gap-2 md:gap-4">

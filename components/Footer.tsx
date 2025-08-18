@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <img 
           src="https://res.cloudinary.com/dy80ftu9k/image/upload/f_auto,q_auto/v1755516557/POSH-LOUNGE-Logo_ibdfyp.png" 
           alt="Posh Lounge Rooftop Logo" 
-          className="h-28 mx-auto mb-6 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]" 
+          className="h-32 mx-auto mb-6 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.4))]" 
         />
         
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left font-sans text-opacity-90">
